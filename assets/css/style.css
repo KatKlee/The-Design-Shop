@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* font-family: 'Karla', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+/* General Grid */
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+}
+
+img {
+    margin-bottom: 16px;
+}
+
+img:hover {
+    opacity: 0.4;
+    transition: 0.2s;
+}
+
+/* ------------------------------------- HEADER ------------------------------------- */
+
+header {
+    grid-column: 2 / span 3;
+    padding: 5vh 0;
+}
+
+/* ------- Shop Logo ------- */
+h1 {
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* ------- Navigation ------- */
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation Links – Positioning */
+header nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+/* Navigation Links – Styling */
+header nav div a {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+header nav div a:hover {
+    opacity: 0.4;
+    transition: 0.2s;
+}
+
+/* Mobile Navigation ab 576px */
+.mobile__menu {
+    display: none;
+    padding: 10px 0;
+}
+
+.mobile__menu span {
+    display: block;
+    background-color: black;
+    margin: 3px 0;
+    width: 22px;
+    height: 3px;
+    border-radius: 5px;
+}
+
+
+/* ------------------------------------- MAIN ------------------------------------- */
+
+/* Grid for Main */
+main {
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5%;
+}
+
+/* Container for Name & Price */
+main .NamePrice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    gap: 15px;
+}
+
+/* Product Name & Product Price */
+main .productName,
+.productPrice {
+    font-size: 13px;
+    font-weight: 500;
+    color: #323A45;
+}
+
+/* Company Name */
+main .companyName {
+    font-size: 13px;
+    font-weight: 400;
+    color: #848484;
+}
+
+/* Landscape Product */
+main .productLandscape {
+    grid-column: 1 / span 3;
+    margin-bottom: 40px;
+}
+
+/* Portrait Product */
+main .productPortrait {
+    grid-column-end: span 1;
+    grid-auto-flow: column;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Product Images */
+main .productLandscape img,
+main .productPortrait img {
+    width: 100%;
+}
+
+
+
+/* ------------------------------------- FOOTER ------------------------------------- */
+
+/* Grid for Footer */
+footer {
+    grid-column: 2 / span 3;
+    padding: 10vh 0;
+}
+
+/* Container for left and right part – Positioning */
+footer div {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 5px;
+}
+
+
+/* ------- Footer Blocks – Contact / Newsletter / Socials------- */
+
+/* Position Footer Blocks */
+footer div .contactNewsFollow {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+/* Headline Footer Blocks */
+.footerBlocks h4 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Text Footer Blocks */
+.footerBlocks p {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.8em;
+}
+
+/* Links Footer Blocks */
+.footerBlocks a {
+    font-size: 11px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ------- Links Hover Effect ------- */
+footer a {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+footer a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+footer a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* ------- Text Highlights ------- */
+
+/* italic text in Newsletter Section */
+footer .italicP {
+    font-style: italic;
+    color: #848484;
+}
+
+/* bold text in About The Shop Section */
+footer div .footerBlocks p span {
+    font-weight: 500;
+}
+
+/* bold text in Newsletter Section */
+footer div .contactNewsFollow .footerBlocks .linkBold {
+    font-weight: 800;
+}
+
+
+/* ------- Copyright Text ------- */
+footer .copyright {
+    font-size: 11px;
+    font-weight: 400;
+    color: #848484;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+    /* General Grid */
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    /* --------------- HEADER --------------- */
+    header {
+        grid-column: 2 / span 1;
+        padding: 5vh 0;
+    }
+
+    header nav {
+        align-items: center;
+    }
+
+    header nav div {
+        display: none;
+    }
+
+    .mobile__menu {
+        display: block;
+    }
+
+    /* --------------- MAIN --------------- */
+    /* Grid for Main */
+    main {
+        grid-column: 2 / span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Container for Name & Price */
+    main .NamePrice {
+        gap: 30px;
+    }
+
+    /* Landscape Product */
+    main .productLandscape {
+        grid-column: 1 / span 1;
+        margin-bottom: 40px;
+    }
+
+    /* Portrait Product */
+    main .productPortrait {
+        grid-column: 1 / span 1;
+        grid-auto-flow: row;
+    }
+
+
+    /* --------------- FOOTER --------------- */
+    /* Grid for Footer */
+    footer {
+        grid-column: 2 / span 1;
+        padding: 10vh 0;
+    }
+
+    footer div {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    /* Position Footer Blocks */
+    footer div .contactNewsFollow {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+}
