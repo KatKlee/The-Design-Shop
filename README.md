@@ -8,9 +8,9 @@ Das Augenmerk bei diesem Projekt lag bei der Verwendung von Grid und media queri
 Die Inhalte und das Design nach Vorgaben.
 
 
-*The start page of a design online shop with the latest product recommendations. A pure frontend project, created with HTML and CSS, for which I used CSS-Grid.
-The page is responsive for mobile through a media query.  
+*The start page of a design online shop with the latest product recommendations. A pure frontend project, created with HTML and CSS, for which I used CSS-Grid.  
+The page is responsive for mobile through a media query.*
 
-The focus of this project was on the use of grid and media queries.  
+*The focus of this project was on the use of grid and media queries.*
 
-The content and design according to specifications.*
+*The content and design according to specifications.*
