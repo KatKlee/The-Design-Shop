@@ -1,6 +1,6 @@
 ## The Design Shop
 
-Die Startseite eines Design-Onlineshops mit den aktuellsten Produktempfehlungen. Ein reines Frontend-Projekt, umgesetzt mit HTML und CSS, bei dem ich CSS-Grid verwendet habe.
+Die Startseite eines Design-Onlineshops mit den aktuellsten Produktempfehlungen. Ein reines Frontend-Projekt, umgesetzt mit HTML und CSS, bei dem ich CSS-Grid verwendet habe.  
 Die Seite ist responsiv für mobile durch eine media query.
 
 Das Augenmerk bei diesem Projekt lag bei der Verwendung von Grid und media queries.
